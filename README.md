@@ -1,3 +1,17 @@
+# Note
+
+This is based on [aeksco/react-typescript-web-extension-starter](https://github.com/aeksco/react-typescript-web-extension-starter), but with lint rules that I commonly use.
+
+To update this, do:
+
+```sh
+git remote add upstream git@github.com:aeksco/react-typescript-web-extension-starter.git
+git fetch upstream
+git rebase upstream/master
+```
+
+# Original README
+
 [![GitHub stars](https://img.shields.io/github/stars/aeksco/react-typescript-web-extension-starter.svg?style=social&label=Stars&style=plastic)]()
 [![GitHub watchers](https://img.shields.io/github/watchers/aeksco/react-typescript-web-extension-starter.svg?style=social&label=Watch&style=plastic)]()
 [![GitHub forks](https://img.shields.io/github/forks/aeksco/react-typescript-web-extension-starter.svg?style=social&label=Fork&style=plastic)]()
