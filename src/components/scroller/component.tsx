@@ -43,12 +43,14 @@ export const Scroller: FunctionComponent = () => {
     <div className="row">
       <div className="col-lg-12">
         <button
+          type="button"
           className="btn btn-block btn-outline-dark"
           onClick={(): void => executeScript(scrollToTopScript)}
         >
           Scroll To Top
         </button>
         <button
+          type="button"
           className="btn btn-block btn-outline-dark"
           onClick={(): void => executeScript(scrollToBottomScript)}
         >

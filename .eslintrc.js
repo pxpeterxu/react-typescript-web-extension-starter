@@ -27,7 +27,7 @@ module.exports = {
 
   settings: {
     'import/extensions': importExtensions,
-    'import/resolver': { node: { extensions: importExtensions } },
+    'import/resolver': { webpack: { config: 'webpack.dev.js' } },
   },
 
   extends: [
@@ -174,5 +174,15 @@ module.exports = {
     'react/jsx-boolean-value': [2, 'never', { always: ['value'] }],
     // We don't use React PropTypes since we're on Typescript
     'react/prop-types': 0,
+
+    //
+    // Chrome extension custom rules
+    //
+
+    // No-extraneous-dependencies should be disabled for a few files
+    'import/no-extraneous-dependencies': [
+      2,
+      { devDependencies: ['**/*.test*', '*.js', '**/*.stories.*'] },
+    ],
   },
 };
